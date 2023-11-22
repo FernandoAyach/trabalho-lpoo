@@ -12,6 +12,6 @@ class Proprietario extends Pessoa {
 
 	@Override
 	public String toString() {
-		return "Proprietario " + super.toString()  + ", pix: " + pix;
+		return "Proprietario " + super.toString()  + ", pix: " + pix + "\n";
 	}
 }

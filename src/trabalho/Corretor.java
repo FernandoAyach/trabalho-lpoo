@@ -12,6 +12,6 @@ class Corretor extends Pessoa {
 
 	@Override
 	public String toString() {
-		return "Corretor " + super.toString() + ", creci: " + this.creci;
+		return "Corretor " + super.toString() + ", creci: " + this.creci + "\n";
 	}
 }

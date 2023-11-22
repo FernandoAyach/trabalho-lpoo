@@ -22,9 +22,9 @@ class ContratoAluguel <T> {
 
 	@Override
 	public String toString() {
-		return "ContratoAluguel imovel " + this.imovel + 
-				", corretor " + this.corretor + 
-				", cliente " + this.cliente + 
-				", tempo " + this.tempo + ", valor " + this.valor;
+		return "ContratoAluguel " + this.imovel + 
+				"\n" + this.corretor + 
+				"\n" + this.cliente + 
+				"Tempo " + this.tempo + ", valor " + this.valor;
 	}
 }

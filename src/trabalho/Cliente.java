@@ -12,6 +12,6 @@ class Cliente extends Pessoa {
 
 	@Override
 	public String toString() {
-		return "Cliente " + super.toString() + " pontuação: " + this.pontuacao;
+		return "Cliente " + super.toString() + " pontuação: " + this.pontuacao + "\n";
 	}
 }

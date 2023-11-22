@@ -37,7 +37,7 @@ abstract class Pessoa implements Verificavel {
 		String codigo;
 		
 		do {
-			System.out.println("Insira novamente o CPF/CNPJ:");
+			System.out.println(getNome() + " - Insira novamente o CPF/CNPJ:");
 			codigo = sc.next();
 		} while(!validar(codigo));
 		
@@ -47,6 +47,6 @@ abstract class Pessoa implements Verificavel {
 	@Override
 	public String toString() {
 		return nome + ", CPF: " + cpf + ", RG: " + rg + 
-		", celular: " + celular + ", data de nascimento: " + dataNascimento + ", endereço: " + endereco;
+		", celular: " + celular + ", data de nascimento: " + dataNascimento + "\nEndereço: " + endereco;
 	} 	
 }

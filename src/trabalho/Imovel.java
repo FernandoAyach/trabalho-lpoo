@@ -23,7 +23,7 @@ class Imovel implements Comparable<Imovel>{
 
 	@Override
 	public String toString() {
-		return "Imovel tipo" + this.tipo + ", endereco " + this.endereco + ", area " + this.area + ", preco " + this.preco + 
-				", proprietario " + proprietario;
+		return "Imovel tipo " + this.tipo + "\nEndereco " + this.endereco + ", area " + this.area + ", preco " + this.preco + 
+				"\n" + proprietario + "\n";
 	}
 }
