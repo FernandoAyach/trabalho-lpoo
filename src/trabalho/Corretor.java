@@ -4,9 +4,9 @@ class Corretor extends Pessoa {
 	private String creci;
 
 	public Corretor(
-		String nome, String cpf, String rg, String celular, String dataNascimento, Endereco endereco, String creci
+		String nome, String cpf, String rg, Endereco endereco, String celular, String dataNascimento, String creci
 	) {
-		super(nome, cpf, rg, celular, dataNascimento, endereco);
+		super(nome, cpf, rg, endereco, celular, dataNascimento);
 		this.creci = creci;
 	}
 

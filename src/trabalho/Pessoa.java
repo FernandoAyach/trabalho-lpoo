@@ -6,17 +6,18 @@ abstract class Pessoa implements Verificavel {
 	private String nome; 
 	private String cpf; 
 	private String rg; 
-	private String celular; 
-	protected String dataNascimento;
 	private Endereco endereco;
+	private String celular; 
+	private String dataNascimento;
 	
-	public Pessoa(String nome, String cpf, String rg, String celular, String dataNascimento, Endereco endereco) {
+	public Pessoa(String nome, String cpf, String rg, Endereco endereco, String celular, String dataNascimento) {
 		this.nome = nome;
 		this.rg = rg;
+		this.endereco = endereco;
 		this.celular = celular;
 		this.dataNascimento = dataNascimento;
-		this.endereco = endereco;
 		
+		//Atribui o cpf se for válido, caso contrário pede outro
 		if(validar(cpf)) this.cpf = cpf;
 		else solicitarNovo();
 	}
@@ -47,6 +48,6 @@ abstract class Pessoa implements Verificavel {
 	@Override
 	public String toString() {
 		return nome + ", CPF: " + cpf + ", RG: " + rg + 
-		", celular: " + celular + ", data de nascimento: " + dataNascimento + "\nEndereço: " + endereco;
+		", celular: " + celular + ", data de nascimento: " + dataNascimento + "\n - Endereço: " + endereco;
 	} 	
 }

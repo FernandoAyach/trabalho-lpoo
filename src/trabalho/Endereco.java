@@ -2,12 +2,14 @@ package trabalho;
 
 class Endereco {
 	private String rua;
+	private int num;
 	private String bairro;
 	private String cidade;
 	private String cep;
 	
-	public Endereco(String rua, String bairro, String cidade, String cep) {
+	public Endereco(String rua, int num, String bairro, String cidade, String cep) {
 		this.rua = rua;
+		this.num = num;
 		this.bairro = bairro;
 		this.cidade = cidade;
 		this.cep = cep;

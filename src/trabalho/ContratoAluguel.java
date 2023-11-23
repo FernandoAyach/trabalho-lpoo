@@ -1,7 +1,6 @@
 package trabalho;
 
 class ContratoAluguel <T> {
-	
 	private Imovel imovel;
 	private Corretor corretor;
 	private Cliente cliente;
@@ -17,14 +16,14 @@ class ContratoAluguel <T> {
 	}
 	
 	public double calcularComissao() {
-		return (0.1 * this.valor);
+		return (0.1 * this.valor); // 10 por cento
 	}
 
 	@Override
 	public String toString() {
 		return "ContratoAluguel " + this.imovel + 
-				"\n" + this.corretor + 
-				"\n" + this.cliente + 
-				"Tempo " + this.tempo + ", valor " + this.valor;
+				" - " + this.corretor + 
+				" - " + this.cliente + 
+				" - Tempo " + this.tempo + ", valor " + this.valor;
 	}
 }

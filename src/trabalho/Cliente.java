@@ -4,9 +4,9 @@ class Cliente extends Pessoa {
 	private int pontuacao;
 
 	public Cliente(
-		String nome, String cpf, String rg, String celular, String dataNascimento, Endereco endereco, int pontuacao
+		String nome, String cpf, String rg, Endereco endereco, String celular, String dataNascimento,  int pontuacao
 	) {
-		super(nome, cpf, rg, celular, dataNascimento, endereco);
+		super(nome, cpf, rg, endereco, celular, dataNascimento);
 		this.pontuacao = pontuacao;
 	}
 

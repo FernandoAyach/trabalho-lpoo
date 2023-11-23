@@ -4,9 +4,9 @@ class Proprietario extends Pessoa {
 	private String pix;
 
 	public Proprietario(
-		String nome, String cpf, String rg, String celular, String dataNascimento, Endereco endereco, String pix
+		String nome, String cpf, String rg, Endereco endereco, String celular, String dataNascimento, String pix
 	) {
-		super(nome, cpf, rg, celular, dataNascimento, endereco);
+		super(nome, cpf, rg, endereco, celular, dataNascimento);
 		this.pix = pix;
 	}
 
