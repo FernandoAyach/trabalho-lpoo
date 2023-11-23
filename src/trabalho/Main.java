@@ -49,7 +49,7 @@ public class Main {
 				n = sc.nextInt();
 				enderecos.add(new Endereco("Av. Boa Viagem", n, "Boa Viagem", "Recife", "50000-000"));
 				
-				System.out.println("Número endereço 5: ");
+				System.out.println("Número endereço 6: ");
 				n = sc.nextInt();
 				enderecos.add(new Endereco("Rua do Comércio", n, "Centro", "Salvador", "40010-020"));
 				
